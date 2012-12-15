@@ -7,17 +7,19 @@
   </head>
   <body>
 
-    <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span4 well">
-          <p class="lead"><strong>Welcome</strong> <br />to the demonstration page of <br />doubly-headed queue.</p>
+          <p class="lead"><strong>Welcome</strong> <br />to the demonstration page of <br /><abbr title="an abstract data type that generalizes a queue, 
+for which elements can be added to or removed 
+from either the front (head) or back (tail)">doubly-headed queue</abbr>.</p>
           <ul class="unstyled">
-            <li>Click <code>Enqueue head</code> to append a random number to the head of a queue.</li>
-            <li>Click <code>Dequeue head</code> to remove member from the head of a queue.</li>
-            <li>Click <code>Enqueue tail</code> to append a random number to a tail of a queue.</li>
-            <li>Click <code>Dequeue tail</code> to remove member from the tail of a queue.</li>
+            <li>Start by clicking <code>Creat</code> to initiate a new queue.</li><br/>
+            <li>Click <code>Enqueue head</code> or <code>Enqueue tail</code> to append a random number to the head or tail of a last queue.</li> <br />
+            <li><code>Dequeue head</code> or <code>Dequeue tail</code> will remove member from the head or tail of a last queue.</li><br />
+            <li><code>Concat</code> allows you to join the last queue to the tail a previous one.</li><br />
           </ul>
           <br />
           <a href="https://github.com/bolshchikov/doubly-headed-queue" class="btn" target="_blank"><strong>View on Github </strong> <img src="img/github_icon.png" /></a>
@@ -30,7 +32,7 @@
         </div>
         <div class="span8">
           <div class="row well">
-            <button class="btn" data-bind="click: create">Create</button>
+            <button class="btn btn-warning" data-bind="click: create">Create</button>
             <div class="btn-group">
               <button class="btn" data-bind="enable: queues().length != 0, click: enqueueHead">Enqueue head</button>
               <button class="btn" data-bind="enable: queues().length != 0, click: dequeueHead">Dequeue head</button>
