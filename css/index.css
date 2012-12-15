@@ -1,0 +1,14 @@
+body {
+  margin-top: 15px; 
+}
+input {
+  margin-top: 10px;
+}
+#queues .btn-group {
+  margin-bottom: 10px;
+}
+address {
+  color: grey;
+  font-size: 11px;
+  float: right;
+}
