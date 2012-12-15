@@ -49,12 +49,13 @@ function AppView() {
     qToAppend = this.queues()[this.queues().length - 2].array;
     qToBeAppended = this.queues()[this.queues().length - 1].array;
     len = qToBeAppended().length;
-    for (i; i < len; i+=1) {
+    for (; i < len; i+=1) {
       var member = qToBeAppended.shift();
       qToAppend.push(member);
     }
     this.queues.pop();
   };
+
 }
 
 ko.applyBindings(new AppView());
